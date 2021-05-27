@@ -81,7 +81,7 @@ AttachedPost.prototype.makeTextHighlighted = function () {
 };
 
 // Создаём объект и вызывам второй конструктор, который в свою очередь подтянет первый.
-let bObj = new AttachedPost('Василий', 'парам-пам-пам', '25.05.2021');
+let bObj = new AttachedPost('Василий', 'парам-пам-пам', Date());
 
 // тут вызов нужных методов
 bObj.edit('Трали-Вали');
@@ -123,7 +123,7 @@ class AttachedPost2 extends Post2 {
 };
 
 // Создаём объект и вызывам второй конструктор, который в свою очередь подтянет первый.
-let bObj2 = new AttachedPost2('Василий', 'парам-пам-пам', '25.05.2021');
+let bObj2 = new AttachedPost2('Василий', 'парам-пам-пам', Date());
 
 // тут вызов нужных методов
 bObj2.edit('Трали-Вали');
