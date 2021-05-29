@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="media">
+        <img src="#" class="align-self-start mr-3" alt="...">
+        <div class="media-body">
+            <h5 class="mt-0">Top-aligned media</h5>
+            <p>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus
+                odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
+                fringilla. Donec lacinia congue felis in faucibus.
+            </p>
+            <p>
+                Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus
+                et
+                magnis dis parturient montes, nascetur ridiculus mus.
+            </p>
+        </div>
+    </div>
+
+    <!-- Задание. Обратитесь к элементу с классом .mt-0 и получите его родителя - элемент с
+    классом .media-body. -->
+
+    <script>
+        function getParent(elemSelector, parentSelector) {
+            let elem = document.querySelector(elemSelector);
+            let parents = document.querySelectorAll(parentSelector);
+
+            for (let i = 0; i < parents.length; i++) {
+                let parent = parents[i];
+
+                if (parent.contains(elem)) {
+                    return parent;
+                }
+            }
+            return null;
+        }
+
+        let result = getParent(
+            '.mt-0',
+            '.media-body'
+        );
+
+        console.log(result);
+    </script>
+</body>
+
+</html>
