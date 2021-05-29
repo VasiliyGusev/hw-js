@@ -1,0 +1,25 @@
+body {
+  text-align: center;
+}
+
+p {
+  line-height: 25px;
+}
+button{
+  width: 100px;
+  height: 40px;
+  margin-top: 40px;
+  font-weight: 700;
+  border-radius: 5px;
+  background-color: aqua;
+  transition: all .3s ease-in-out;
+  border: 1px solid transparent;
+  cursor: pointer;
+  outline: none;
+}
+button:hover{
+  background-color: #fff;
+  color: aqua;
+  box-shadow: 0px 0px 42px 0px aqua;
+  transform: scale(1.1, 1.1);
+}
