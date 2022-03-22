@@ -60,6 +60,3 @@ console.log(fourthSum);
 */
 let fifthSum = 10 / +"2,5";
 console.log(fifthSum);
-
-
-// Добавил коммент для создания пул-реквеста )
